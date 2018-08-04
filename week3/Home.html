@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Twitter</title>
+	
+	
+	<script src="main.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+	<link type="text/css" rel="stylesheet" href="Home.css">
+
+</head>
+<body>
+	<nav>
+		<div class="navbar my-nav">
+			<div class="container-fluid row">
+				<div class="navbar-nav col-md-5">
+					<ul class="text-center nav-links">
+						<li id="home-link"><a  href="#home"><i class="fas fa-home"></i> Home</a></li>
+						<li ><a  href="#notifications"><i class="far fa-bell"></i> Notifications</a></li>
+						<li ><a  href="#messages"><i class="far fa-envelope"></i> Messages</a></li>
+					</ul>
+				</div>
+
+				<div id="mid-nav" class="col-md-2">
+					<a href="#Home"><i class="twit-blue-text fab fa-twitter fa-2x"></i></a>
+				</div>
+
+				<div style="text-align: right;" class="container col-md-5">
+					<div id="search-container" class="container">
+						<input id="search-box" type="search" name="search-box" placeholder="Search Twitter Clone..">
+						<a id="search-icon" href=""><i class="fas fa-search"></i></a>
+					</div>
+
+					<a id="circle-nav" href="#Profile">
+						<img src="https://pbs.twimg.com/profile_images/888159773165850624/_k96Iqxf_bigger.jpg">
+					</a>
+					<button id="tweet-nav">Tweet</button>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	
+	<div id="main-section" class="row">
+		<div class="col-md-3">
+			<div class="card card-no-pad">
+				<div id="blue-header"></div>
+				<div id="user-info">
+					<img src="https://pbs.twimg.com/profile_images/888159773165850624/_k96Iqxf_400x400.jpg">
+					<div id="username-div">
+						<h5 class="font-weight-bold">Humam Halabi</h5>
+						<h6>@HumamHalabi</h6>
+					</div>
+				</div>
+				<div id="follow-count">
+						<div class="info-count">
+							<h6 class="grey-text font-weight-bold">Tweets</h6>
+							<a href="#Tweets"><h5 class="font-weight-bold twit-blue-dark">541</h5></a>
+						</div>
+						<div class="info-count">
+							<h6 class="grey-text font-weight-bold">Following</h6>
+							<a href="#Following"><h5 class="font-weight-bold twit-blue-dark">326</h5></a>
+						</div>
+						<div class="info-count">
+							<h6 class="grey-text font-weight-bold">Followers</h6>
+							<a href="#Followers"><h5 class="font-weight-bold twit-blue-dark">3.4m</h5></a>
+						</div>
+					</div>
+			</div>
+			<div class="card card-no-pad">
+				<h5 class="font-weight-bold m-2">Trends for you</h5>
+				<a class="font-weight-bold twit-blue-dark ml-3 mb-1" href="">#Project</a>
+				<a class="font-weight-bold twit-blue-dark ml-3 mb-1" href="">#HTML</a>
+				<a class="font-weight-bold twit-blue-dark ml-3 mb-1" href="">#CSS</a>
+				<a class="font-weight-bold twit-blue-dark ml-3 mb-1" href="">#Humam</a>
+				<a class="font-weight-bold twit-blue-dark ml-3 mb-1" href="">#Abcd123</a>
+				<a class="font-weight-bold twit-blue-dark ml-3 mb-1" href="">#TestTest</a>
+			</div>
+		</div>
+
+
+		<div class="col-md-6">
+			<div class="card">
+				<div class="tweet">
+					<img class="t-pic" src="https://media.istockphoto.com/photos/businessman-silhouette-as-avatar-or-default-profile-picture-picture-id476085198?k=6&m=476085198&s=612x612&w=0&h=5cDQxXHFzgyz8qYeBQu2gCZq1_TN0z40e_8ayzne0X0=">
+					<div class="t-content">
+						<a class="t-name" href="">
+							<h6 class="t-text">Someone Someone 
+							<span class="t-uname">@Someone</span>
+							<span class="t-time">&middot; 2h</span>
+							</h6>
+						</a>
+						<p class="big-tweet">Hi. This is just a random text for testing my Twitter clone website :)</p>
+						<div class="t-buttons">
+							<a class="comment-btn" href=""><i class="far fa-comment"></i></a>
+							<a class="retweet-btn" href=""><i class="fas fa-retweet"></i></a>
+							<a  class="love-btn" href=""><i class="far fa-heart"></i></a>
+							<a class="mail-btn" href=""><i class="far fa-envelope"></i></a>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="tweet">
+					<img class="t-pic" src="https://media.istockphoto.com/photos/businessman-silhouette-as-avatar-or-default-profile-picture-picture-id476085198?k=6&m=476085198&s=612x612&w=0&h=5cDQxXHFzgyz8qYeBQu2gCZq1_TN0z40e_8ayzne0X0=">
+					<div class="t-content">
+						<a class="t-name" href="">
+							<h6 class="t-text">Someone Someone 
+							<span class="t-uname">@Someone</span>
+							<span class="t-time">&middot; 4h</span>
+							</h6>
+							</a>
+						<p class="mid-tweet">Hi. This is another random text for testing my website. Because it is longer, the font is smaller than the one above.</p>
+						<div class="t-buttons">
+							<a class="comment-btn" href=""><i class="far fa-comment"></i></a>
+							<a class="retweet-btn" href=""><i class="fas fa-retweet"></i></a>
+							<a  class="love-btn" href=""><i class="far fa-heart"></i></a>
+							<a class="mail-btn" href=""><i class="far fa-envelope"></i></a>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="tweet">
+					<img class="t-pic" src="https://media.istockphoto.com/photos/businessman-silhouette-as-avatar-or-default-profile-picture-picture-id476085198?k=6&m=476085198&s=612x612&w=0&h=5cDQxXHFzgyz8qYeBQu2gCZq1_TN0z40e_8ayzne0X0=">
+					<div class="t-content">
+						<a class="t-name" href="">
+							<h6 class="t-text">Someone Someone 
+							<span class="t-uname">@Someone</span>
+							<span class="t-time">&middot; 8h</span>
+							</h6>
+						</a>
+						<p>So. This is another sample tweet text. Notice how this one has a normal font size. This is because it is such a long tweet and it would take a lot of space if we make it big! u.u</p>
+						<div class="t-buttons">
+							<a class="comment-btn" href=""><i class="far fa-comment"></i></a>
+							<a class="retweet-btn" href=""><i class="fas fa-retweet"></i></a>
+							<a  class="love-btn" href=""><i class="far fa-heart"></i></a>
+							<a class="mail-btn" href=""><i class="far fa-envelope"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3">
+			<div class="card card-no-pad">
+				<h5 class="font-weight-bold m-2">Who to follow</h5>
+				<div class="suggested-person">
+					<img src="http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-rapper-guy.png" class="float-left">
+					<a href=""><h6 class="font-weight-bold black-color">Someone haha</h6></a>
+					<button>Follow</button>
+				</div>
+				<div class="suggested-person">
+					<img src="http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ginger-guy.png" class="float-left">
+					<a href=""><h6 class="font-weight-bold black-color">Someone haha</h6></a>
+					<button>Follow</button>
+				</div>
+				<a class="m-2 mt-3 mb-3" href=""><i class="fas fa-users"></i> Find more people.</a>
+			</div>
+
+			<div class="card card-no-pad">
+				<p class="m-3">Twitter clone by Humam Safar AlHalabi </p>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
